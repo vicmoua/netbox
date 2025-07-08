@@ -1,6 +1,6 @@
 # NetBox Warranty Notification Script
 
-This script monitors device warranties in NetBox and sends Slack alerts for upcoming expirations. It uses encrypted secrets for security via `eyaml`.
+This script monitors device warranties in NetBox and sends Slack alerts for upcoming expirations. It uses encrypted secrets for security via `eyaml`. Note that when defining the warranty fields they must be using the following format: <customfield>_<customfield> as the API does not support spaces (eg. warranty_expiration, end_of_life, warranty_type, etc.).
 
 ---
 Requirements:
